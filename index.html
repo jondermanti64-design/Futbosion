@@ -1,1 +1,109 @@
 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BetVision AI</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+<h1>⚽ BetVision AI</h1>
+
+<p>Inteligencia Artificial para Análisis Deportivo</p>
+
+</header>
+
+<nav>
+
+<button onclick="mostrar('inicio')">🏠 Inicio</button>
+
+<button onclick="mostrar('buscar')">🔍 Buscar Partido</button>
+
+<button onclick="mostrar('analizador')">📊 Analizador</button>
+
+<button onclick="mostrar('historial')">📁 Historial</button>
+
+<button onclick="mostrar('configuracion')">⚙ Configuración</button>
+
+</nav>
+
+<main>
+
+<section id="inicio">
+
+<h2>Bienvenido</h2>
+
+<p>
+BetVision AI analizará partidos de fútbol utilizando cuotas y estadísticas para recomendar los mejores mercados.
+</p>
+
+</section>
+
+<section id="buscar" style="display:none;">
+
+<h2>Buscar Partido</h2>
+
+<input
+type="text"
+id="buscarPartido"
+placeholder="Ej: Arsenal vs Chelsea">
+
+<button onclick="buscarPartido()">
+
+Buscar Partido
+
+</button>
+
+<div id="resultadoBusqueda"></div>
+
+</section>
+
+<section id="analizador" style="display:none;">
+
+<h2>Analizador de Cuotas</h2>
+
+<p>
+
+En la siguiente versión aquí aparecerán todos los mercados.
+
+</p>
+
+</section>
+
+<section id="historial" style="display:none;">
+
+<h2>Historial</h2>
+
+<p>
+
+Aquí se guardarán todos los análisis.
+
+</p>
+
+</section>
+
+<section id="configuracion" style="display:none;">
+
+<h2>Configuración</h2>
+
+<p>
+
+Opciones de la aplicación.
+
+</p>
+
+</section>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
